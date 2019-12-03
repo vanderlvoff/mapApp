@@ -13,10 +13,50 @@
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mapApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S6f-ZU-5hV">
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ooo-kZ-63b">
+                                <rect key="frame" x="36" y="79" width="212" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="212" id="Fhe-b6-7KP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSE-Ti-Q6Z">
+                                <rect key="frame" x="292" y="81" width="81" height="30"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="get place">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="findCity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qqJ-Io-MWX"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zSE-Ti-Q6Z" firstAttribute="centerY" secondItem="Ooo-kZ-63b" secondAttribute="centerY" id="5Zv-M1-eIJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S6f-ZU-5hV" secondAttribute="trailing" id="CLn-yH-rk6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zSE-Ti-Q6Z" secondAttribute="trailing" constant="41" id="ERu-1d-mzx"/>
+                            <constraint firstItem="S6f-ZU-5hV" firstAttribute="top" secondItem="Ooo-kZ-63b" secondAttribute="bottom" constant="31" id="TZj-cp-Ltr"/>
+                            <constraint firstItem="S6f-ZU-5hV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fY7-M8-ZOI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S6f-ZU-5hV" secondAttribute="bottom" id="iXe-0A-Z0i"/>
+                            <constraint firstItem="Ooo-kZ-63b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="pym-He-f55"/>
+                            <constraint firstItem="S6f-ZU-5hV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="r1H-5o-8xa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="myMapUIView" destination="S6f-ZU-5hV" id="eNm-T6-v4u"/>
+                        <outlet property="placeName" destination="Ooo-kZ-63b" id="pla-YM-sgd"/>
+                        <outlet property="submitButton" destination="zSE-Ti-Q6Z" id="1l0-28-tx7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
