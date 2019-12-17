@@ -25,7 +25,7 @@ class ViewController: UIViewController {
 
           // Create a GMSCameraPosition that tells the map to display the
           // coordinate -33.86,151.20 at zoom level 6.
-        camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
+        camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 3.0)
         mapView = GMSMapView.map(withFrame: self.myMapUIView.bounds, camera: camera)
 
           // Creates a marker in the center of the map.

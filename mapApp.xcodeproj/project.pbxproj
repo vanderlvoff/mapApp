@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150CB17323A89663008FF6EF /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150CB17223A89663008FF6EF /* MapKitViewController.swift */; };
+		150CB17523A89D38008FF6EF /* lovedeathrobots.png in Resources */ = {isa = PBXBuildFile; fileRef = 150CB17423A89D37008FF6EF /* lovedeathrobots.png */; };
 		15D8287C239603EB00141CB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D8287B239603EB00141CB5 /* AppDelegate.swift */; };
 		15D8287E239603EB00141CB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D8287D239603EB00141CB5 /* SceneDelegate.swift */; };
 		15D82880239603EB00141CB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D8287F239603EB00141CB5 /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		150CB17223A89663008FF6EF /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
+		150CB17423A89D37008FF6EF /* lovedeathrobots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lovedeathrobots.png; path = ../../../../Desktop/lovedeathrobots.png; sourceTree = "<group>"; };
 		15D82878239603EB00141CB5 /* mapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D8287B239603EB00141CB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15D8287D239603EB00141CB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				15D8287D239603EB00141CB5 /* SceneDelegate.swift */,
 				15D8287F239603EB00141CB5 /* ViewController.swift */,
 				15D82881239603EB00141CB5 /* Main.storyboard */,
+				150CB17223A89663008FF6EF /* MapKitViewController.swift */,
+				150CB17423A89D37008FF6EF /* lovedeathrobots.png */,
 				15D82884239603EE00141CB5 /* Assets.xcassets */,
 				15D82886239603EE00141CB5 /* LaunchScreen.storyboard */,
 				15D82889239603EE00141CB5 /* Info.plist */,
@@ -141,7 +147,6 @@
 				784027023DCB20905C76283C /* Pods-mapApp.debug.xcconfig */,
 				D991EE16EC8AC2CB613C6B09 /* Pods-mapApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -262,6 +267,7 @@
 				15D82888239603EE00141CB5 /* LaunchScreen.storyboard in Resources */,
 				15D82885239603EE00141CB5 /* Assets.xcassets in Resources */,
 				15D82883239603EB00141CB5 /* Main.storyboard in Resources */,
+				150CB17523A89D38008FF6EF /* lovedeathrobots.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +336,7 @@
 			files = (
 				15D82880239603EB00141CB5 /* ViewController.swift in Sources */,
 				15D8287C239603EB00141CB5 /* AppDelegate.swift in Sources */,
+				150CB17323A89663008FF6EF /* MapKitViewController.swift in Sources */,
 				15D8287E239603EB00141CB5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +514,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RWDE5H24E6;
 				INFOPLIST_FILE = mapApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -526,6 +534,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RWDE5H24E6;
 				INFOPLIST_FILE = mapApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
