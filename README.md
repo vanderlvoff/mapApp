@@ -1,2 +1,2 @@
 # mapApp
-Google map tutorial app 
+Google map and MapKit tutorial app 
