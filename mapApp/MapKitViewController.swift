@@ -36,7 +36,6 @@ class MapKitViewController: UIViewController, MKMapViewDelegate {
                 }
                 
                 if placemarks!.count > 0 {
-                    print(placemarks!.count)
                     self.placemark = placemarks![0]
                     self.mapView.addAnnotation(annotation)
                 }
@@ -74,7 +73,7 @@ class MapKitViewController: UIViewController, MKMapViewDelegate {
             // Configure your annotation view here
             annotationView.canShowCallout = true
             let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20));
-            imageView.image = UIImage(named: "lovedeathrobots")git a
+            imageView.image = UIImage(named: "lovedeathrobots")
             annotationView.addSubview(imageView)
             
             let label = UILabel(frame: CGRect(x: 0, y: 10, width: 100, height: 30))
